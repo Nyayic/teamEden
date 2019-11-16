@@ -1,0 +1,132 @@
+.spoil {
+    position: relative;
+    overflow: hidden;
+/*     border: 1px solid #c3c3c3; */
+    border-left: 2px solid #ccc;
+    margin: 15px 0 15px 0;
+    height: 37px;
+	box-sizing: content-box;
+}
+
+.spoil .sp_text {        
+	margin: 60px 10px -10px 10px;
+	box-sizing: content-box;
+}
+
+.spoil .sp_top {
+	font-family: 'HindRegular';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	border: 1px solid #c1c1c1;
+	border-right: none;
+	border-left: none;
+	display: table;
+	box-sizing: content-box;
+}
+
+.spoil .sp_span {
+	vertical-align: middle;
+	display: table-cell;
+	padding: 2px 0 0 20px;
+	box-sizing: content-box;
+	font-size: 18px;
+	color: #403f3f;
+}
+
+.spoil .sp_button {
+	position: absolute;
+	right: 0; top: 0;
+	width: 100px;	
+	height: 37px; 
+	text-align: center;
+	color:#fff;
+	background: #c1c1c1;
+	box-sizing: border-box;
+	border: 1px #c1c1c1 solid;
+    -webkit-appearance: none;
+}
+
+.spoil .sp_button:hover {
+	background-color: #6fb7f4;
+	border: 1px #337ab7 solid;
+    outline: none;
+}
+
+/* code {
+	background: rgba(195, 195, 195, 0.1);
+	color: #222;
+} */
+code, pre {
+    border-radius: 3px;
+    color: #444;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 0 3px 2px;
+}
+code {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    color: #d14;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 0 10px;
+    padding: 9.5px;
+    white-space: pre-wrap;
+    word-break: normal;
+    word-wrap: break-word;
+}
+.com {
+    color: #93a1a1;
+}
+.lit {
+    color: #195f91;
+}
+.pun, .opn, .clo {
+    color: #93a1a1;
+}
+.fun {
+    color: #dc322f;
+}
+.str, .atv {
+    color: #d14;
+}
+.kwd, .prettyprint .tag {
+    color: #1e347b;
+}
+.typ, .atn, .dec, .var {
+    color: teal;
+}
+.pln {
+    color: #48484c;
+}
+.prettyprint {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    padding: 8px 5px;
+}
+.prettyprint.linenums {
+    box-shadow: 40px 0 0 #fbfbfc inset, 41px 0 0 #ececf0 inset;
+}
+
+ol.linenums li {
+    color: #bebec5;
+    line-height: 20px;
+    padding-left: 12px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+
+
+
+

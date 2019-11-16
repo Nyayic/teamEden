@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* CSS Document */
+html,body {width:100%; height:100%;}
+
+body{
+/* 	font-family: 'PT Serif', serif; */
+	font-size: 16px;
+}
+
+footer, header, section, aside {
+	display:block;
+}
+
+@font-face {
+  font-family: HindRegular;
+  src: url('fonts/Hind/Hind-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: HindMedium;
+  src: url('fonts/Hind/Hind-Medium.ttf');
+  font-weight: 600;
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: HindSemibold;
+  src: url('fonts/Hind/Hind-Semibold.ttf');
+  font-weight: 500;
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: HindLight;
+  src: url('fonts/Hind/Hind-Light.ttf');
+  font-weight: 300;
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: UbuntuRegular;
+  src: url('fonts/Ubuntu/Ubuntu-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: UbuntuMedium;
+  src: url('fonts/Ubuntu/Ubuntu-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: UbuntuBold;
+  src: url('fonts/Ubuntu/Ubuntu-Bold.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+a, a:hover {
+	text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: normal;
+	padding: 0;
+	font-family: 'UbuntuRegular';
+	text-transform: uppercase;
+}
+
+h1 {
+	color: #6fb7f4;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+h1.page-header {
+	padding-bottom: 8px;
+	border-bottom: 1px solid #6fb7f4;	
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 32px;
+	font-family: 'HindMedium';
+	margin-top: 32px;
+	margin-bottom: 22px;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: 'HindMedium';
+	text-transform: none;
+}
+
+h4 {
+
+}
+
+h5 {
+	text-transform: none;
+}
+
+#header{
+	width: 100%;
+	z-index: 100;
+	height: 65px;  /* added */
+}
+
+img{width: 100%;}
+
+.doc-nav.affix {
+  top: 60px;
+  width:263px;
+}
+.doc-nav.affix-bottom {
+    position: relative;
+}
+.doc-sidebar .nav > li > a {padding:8px 15px;}
+
+.doc-nav > li {	background: #f6f8fa; position: relative;  list-style: outside none none;}
+.doc-nav > li a {
+    white-space: nowrap;
+    margin-bottom: 1px;
+	border-left: 5px solid;
+	border-left-color: #e6e6e6;
+	font-size: 16px;
+	font-family: 'HindLight';
+}
+
+.doc-nav > li.active > a {
+	border-left: 5px solid;
+	border-left-color: #6fb7f4;
+	font-family: 'HindSemibold';
+}
+
+.doc-nav .docs-progress-bar {
+    background:#dee4ec ;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+/* O titlos */
+
+.doc-sidebar .nav-list:before {
+    background: none repeat scroll 0 0 #c1c1c1;
+    color: #fff;
+    content: "Doc Navigation";
+    display: block;
+    margin-bottom: 1px;
+    padding: 5px 19px;
+	margin-top: 67px;
+	font-family:'HindRegular';
+	font-size: 24px;	
+}
+
+.doc-content > div {width:100%; overflow:hidden;}
+
+/* ADDED */
+
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.navbar-inverse, .navbar.navbar-inverse.affix, .footer-wrapper{
+	background-color: #2d3e50;
+}
+
+.navbar-brand {
+	font-size: 24px;
+	padding: 22px 15px 0 15px;
+	font-family: 'UbuntuRegular' !important;
+}
+
+.page-header {
+	margin-top: 60px;
+}
+
+.image-box {
+	width: 100%;
+	text-align:center;
+	/*margin: 30px 0 50px 0;*/
+	margin: 27px 0 25px 0;
+
+}
+.navbar-inverse .navbar-brand {
+    outline: none;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+	font-family: 'UbuntuBold';
+    color: #fff;
+	font-size: 48px;
+	font-weight: 100;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover{
+    color: #6fb7f4 !important;
+}
+
+.navbar.navbar-inverse.affix {
+    border: none;
+    border-bottom: 1px #222 solid;
+}
+
+.navbar.navbar-inverse.affix  .navbar-nav> li > a, .navbar.navbar-inverse.affix .navbar-brand, 
+.navbar.navbar-inverse.affix .custom-search-button {    
+    color: #fff;
+}
+
+.navbar.navbar-inverse.affix  .navbar-nav> li > a:hover,
+.navbar.navbar-inverse.affix .navbar-brand:hover, 
+.navbar.navbar-inverse.affix .custom-search-button:hover {
+    color: #dedede;
+}
+
+.doc-sidebar .doc-nav > li a:hover{
+	background-color: #e6e6e6;
+}
+
+
+/* Search styles */
+
+.highlight
+{
+	background-color: #3f4045;
+	color: #fff;
+}
+.find_selected
+{
+	background-color: #29739d;
+	color: #fff;
+	font-weight: bold;
+}
+
+.custom-search-button{
+	margin-top: 18px;
+	margin-right: 157px;
+	float: right;
+	color: #fff;
+}
+
+.custom-search-button input{
+	background: transparent;
+	font-family: 'UbuntuRegular';
+	font-size: 18px;	
+	border: none; 
+	font-variant: small-caps;
+	letter-spacing: 0.5px;
+}
+
+.custom-search-button:hover{	
+    color: #6fb7f4 !important;
+}
+
+.custom-search-button .icon-search:before{
+	font-size: 16px;
+	margin-right: 0;
+}
+
+.custom-search-button label{
+	cursor: pointer;	
+}
+
+
+
+
+
+#findwindow {top:127px !important; position:fixed !important; right:35% !important; left:auto !important; font-family:'HindRegular'; font-size: 16px;}
+
+#window_body{text-align: center;}
+
+#window_body input[type="button"]{
+	color: #2d3e50;
+	background: transparent !important; 
+	border: none !important;
+    outline: none;
+    border: none;
+	font-family: 'HindRegular';	
+	font-size: 14px;
+    margin: 15px 10px 0 10px;
+    padding: 5px 10px;
+}
+
+#window_body input[type="button"]:hover{
+	color: #6fb7f4;
+    outline: none;
+    border: none;
+    border: none;
+}
+
+#window_body input[type="search"] {
+    outline: none;
+    border: none;
+    box-sizing: content-box;
+}
+
+#findwindow .close {opacity:1;}
+
+#findwindow .close:hover{
+/* 	background-color:#fff !important; */
+	color: #6fb7f4 !important;
+	text-shadow: 0 1px 0 #6fb7f4;
+}
+
+#fwtext{
+	margin-top: 10px;
+	display: block;
+	padding-left: 6px;
+	color: #2d3e50 !important;
+	font-family: 'HindLight';
+}
+
+
+
+
+footer {
+    padding: 25px 8% 15px 8%;
+    width: 100%;  
+	color:#a6a19f;	
+	margin-top:30px;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'HindLight';	
+}
+
+footer p{
+	margin-left: 2px;
+}
+
+footer a {
+	text-decoration: none !important;
+}
+
+
+footer a, footer span{
+	color:#fff;
+
+}
+
+footer a:hover {	
+    color: #6fb7f4;
+}
+
+
+/* To Top */
+
+.upToScroll {
+	-webkit-appearance: none;
+	position: fixed; 
+	display: none; 
+	height: 48px; 
+	bottom: 80px; 
+	right: 12%; 
+	cursor: pointer; 
+	z-index: 1001;
+}
+
+.upToScroll a { 
+	display: inline-block; 
+	width: 48px; 
+	height: 48px; 
+	font-size: 20px; 
+	line-height: 46px; 
+	text-align: center; 
+	color:#fff;
+	background-color: #2d3e50;
+	outline: none;
+	border-radius: 100%;
+}
+
+.upToScroll a:hover { 
+	background-color: #6fb7f4;
+}
+
+/* .upToScroll a:before { font-size:inherit; line-height:12px; padding:0; margin:0; } */
+
+
+img.small {
+  width: 250px;
+  float: left;
+  overflow: hidden;
+}
+
+.after_image_p {
+  clear: both;
+  padding-top: 1em;
+}
+
+img {
+  border: 2px solid #c1c1c1;  
+}
+
+.upToScroll a.icon-edit {
+	padding-left: 3px;
+}
+
+.label-info {
+	background-color: #6fb7f4;
+	padding: .5em .6em .3em;
+}
+
+.label-danger {
+	background-color: #d14;
+	padding: .5em .6em .3em;
+}
+
+img.original {
+  width: auto;
+  margin-bottom: 20px;
+}
